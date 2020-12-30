@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href= "node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Multi Dex</title> 
+    </head>
+    <body style="background-color: black;">
+        <div class="row">
+            <div class="col-12 col-sm-4" id="newsPart">
+                <h2 class="Headline"><b>News Headlines for today.</b></h2>
+                <div class="card newsCard" id="imageNews1">
+                    <div class="card-body" style="overflow: hidden;"><p ><b ><mark id="news1">Loading...</mark></b></p></div></div>
+                <div class="card newsCard"  id="imageNews2">
+                    <div class="card-body" style="overflow: hidden;"><p><b ><mark id="news2">Loading...</mark></b></p></div></div>
+                <div class="card newsCard" id="imageNews3">
+                    <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="news3">Loading...</mark></b></p></div></div>
+                <div class="card newsCard" id="imageNews4">
+                    <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="news4">Loading...</mark></b></p></div></div>
+                
+            </div> 
+            <div class="col-12 col-sm-6">
+                <div class="container optionPart">
+                    <h1 id="welcome"><b>Welcome.</b></h1>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="card options" id="Clock">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card options" id="Weather"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="card options" id="News"></div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card options" id="Youtube"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            require("./Files/index.js")
+        </script>
+     
+    </body>
+</html>

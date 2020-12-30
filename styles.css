@@ -1,0 +1,319 @@
+.newsCard{
+    padding: 2vh 3vw;
+    background-color: brown;
+    border-radius: 4px;
+    height: 20vh;
+    width: 25vw;
+    margin-top: 5vh;
+    background-image: url('https://www.indiafellow.org/blog/wp-content/uploads/2020/05/Marketplace-Lending-News.jpg'); 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+.options{
+    padding-top: 4vh;
+    background-color: rgb(203, 218, 2);
+    border-radius: 4px;
+    height: 20vh;
+    width: 20vw;
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+}
+    
+.Headline{
+    margin-bottom: 2vh;
+    border-bottom: 1px solid grey;
+    color: cornsilk;
+}
+#newsPart{
+    margin-top: 6vh;
+    border-right: 3px solid grey;
+    height: 100vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    top:0;
+}
+
+.optionPart{
+    margin-top: 18vh;
+   
+}
+
+#welcome{
+    color: white;
+}
+
+#clock{
+    font-size: 5vh;
+    padding: 2vh 3vw;
+    text-align: center;
+    color: white;
+    background-color: rgb(90, 11, 11);
+    align-content: center;
+    border-radius: 8pt;
+}
+
+#clock:hover{
+    background-color: rgb(199, 92, 5);
+}
+
+#date{
+    font-size: 5vh;
+}
+
+#ClockPage{
+    
+    padding-top: 2vh;
+    color: white;
+    background-color: #BB3094;
+    border-radius: 4px;
+    height: 12vh;
+    width: 20vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    font-size: 5vh;
+    text-align: center;
+}
+
+#ClockPage:hover{
+    background-color: rgb(56, 2, 58);
+}
+
+#StopwatchPage{
+    padding-top: 2vh;
+    color: white;
+    background-color: #57B9BF;
+    border-radius: 4px;
+    height: 12vh;
+    width: 20vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    font-size: 5vh;
+    text-align: center;
+}
+
+#StopwatchPage:hover{
+    background-color: rgb(3, 54, 70);
+}
+
+
+#TimerPage{
+    padding-top: 2vh;
+    color: white;
+    background-color: #BEDC06;
+    border-radius: 4px;
+    height: 12vh;
+    width: 20vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    font-size: 5vh;
+    text-align: center;
+}
+
+#TimerPage:hover{
+    background-color:rgb(129, 55, 5);
+}
+
+.flex-container{
+    margin: 1vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#stopwatch{
+    font-size: 5vh;
+    padding: 2vh 3vw;
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 6, 68);
+    align-content: center;
+    border-radius: 12pt;
+}
+
+#stopwatch:hover{
+    background-color: royalblue;
+}
+
+#reset{
+    height: 5vh;
+    width: 8vw;
+    font-weight: bold;
+    border-radius: 40%;
+    outline: none;
+}
+
+#start{
+    height: 5vh;
+    width: 8vw;
+    font-weight: bold;
+    border-radius: 40%;
+    outline: none;
+
+}
+
+#stop{
+    height: 5vh;
+    width: 8vw;
+    font-weight: bold;
+    border-radius: 40%;
+    outline: none;
+
+}
+#set{
+    height: 5vh;
+    width: 8vw;
+    font-weight: bold;
+    border-radius: 40%;
+    outline: none;
+}
+
+.flex-containerStopwatch{
+    margin: 1vh 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex-containerTimer{
+    margin: 1vh 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#locationPart{
+    margin-top: 6vh;
+    border-right: 3px solid grey;
+    height: 100vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    top:0;
+}
+
+#Guwahati{
+   background-color: rgb(150, 5, 155);
+}
+#Guwahati:hover{
+    background-color:  rgb(36, 2, 37);
+}
+
+#Dibrugarh{
+    background-color: rgb(8, 110, 52);
+}
+#Dibrugarh:hover{
+    background-color: rgb(3, 37, 18);
+}
+
+#Jorhat{
+    background-color: rgb(167, 67, 20);
+}
+#Jorhat:hover{
+    background-color: rgb(77, 27, 4);
+}
+
+#Clock{
+    background-color: rgb(2, 204, 218);
+    background-image: url('./images/wall-clock.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Clock:hover{
+    background-color:rgb(3, 67, 71);
+}
+
+#Weather{
+    background-color:rgb(243, 246, 247);
+    background-image: url('./images/cloudy.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Weather:hover{
+    background-color:rgb(51, 51, 51);
+}
+
+#News{
+    background-color:rgb(10, 202, 10);
+    background-image: url('./images/newspaper.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#News:hover{
+    background-color:rgb(4, 73, 4);
+}
+
+
+#Youtube{
+    background-color:rgb(207, 10, 10);
+    background-image: url('./images/youtube.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#Youtube:hover{
+    background-color:rgb(87, 4, 4);
+}
+
+
+.newsHead > .row{
+   display: block;
+   overflow-x: auto;
+   white-space: nowrap;
+}
+
+.newsHead> .row> .col-4{
+    display: inline-block;
+    justify-content: space-evenly;
+    float: none;
+}
+
+.newsCatg{
+    text-align: center;
+    overflow: hidden;;
+    color: white;
+    padding: 2vh 3vw;
+    background-color: brown;
+    border-radius: 4px;
+    height: 12vh;
+    width: 25vw;
+    margin-top: 1vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 2vh;
+}
+
+#Business:hover{
+   background-color: rgb(224, 53, 53);
+  
+}
+
+#Technology:hover{
+    background-color: rgb(224, 53, 53);
+    
+}
+
+#Sports:hover{
+    background-color: rgb(224, 53, 53);
+    
+}
+
+#Health:hover{
+    background-color: rgb(224, 53, 53);
+   
+}
+
+#Science:hover{
+    background-color: rgb(224, 53, 53);
+  
+}
+
+
+#Entertainment:hover{
+    background-color: rgb(224, 53, 53);
+
+ }
+

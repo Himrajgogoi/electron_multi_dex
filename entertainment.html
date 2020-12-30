@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href= "node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Multi Dex</title> 
+    </head>
+    <body style="background-color: black;">
+        <a href="./index.html"><i class="fa fa-arrow-left fa-lg"  style=" margin-top: 4vh; margin-left: 3vw"></i></a>
+        <h3 style="border-bottom: 1px solid white; color: white;  margin: 4vh 3vw"><b>Categories.</b></h3>
+            <div class="row">
+                <div class="container-fluid newsHead">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="./sports.html" style="text-decoration: none;"><div class="card newsCatg" id="Sports"><h4><b>Sports.</b></h4></div></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="./business.html" style="text-decoration: none;"><div class="card newsCatg" id="Business"><h4><b>Business.</b></h4></div></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="./entertainment.html" style="text-decoration: none;"><div class="card newsCatg" id="Entertainment"><h4><b>Entertainment.</b></h4></div></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="./health.html" style="text-decoration: none;"><div class="card newsCatg" id="Health"><h4><b>Health.</b></h4></div></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="./science.html" style="text-decoration: none;"><div class="card newsCatg" id="Science"><h4><b>Science.</b></h4></div></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="./technology.html" style="text-decoration: none;"><div class="card newsCatg" id="Technology"><h4><b>Technology.</b></h4></div></a>
+                        </div>   
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 style=" color: white;  margin: 4vh 3vw; text-align: center;" id="Category"><b>Entertainment</b></h3>
+            <div class="row">
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg1"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg1">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg2"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg2">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg3"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg3">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg4"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg4">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg5"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg5">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg6"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg6">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 5vh;">
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg7"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg7">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 offset-sm-1">
+                    <div class="card newsCard" id="imageNewsCatg8"  style="height: 30vh; width: 40vw;">
+                        <div class="card-body" style="overflow: hidden;"><p><b ><mark   id="newsCatg8">Loading...</mark></b></p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!----write this script before imports in electron -->
+
+            <script>if(typeof module == 'object'){
+                window.module = module;
+                module = undefined;
+            }</script>
+
+            <!---import the scripts -->
+             
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            
+            <!---- write this script after imports -->
+
+            <script>if(window.module) module = window.module;</script>
+
+           
+            <script>
+                require("./Files/entertainment.js")
+            </script>
+     
+    </body>
+</html>
