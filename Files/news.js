@@ -59,7 +59,7 @@ function fetch(category){
 
 
 setTimeout(function(){
-    req("https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.API_KEY}", function(err,res,body){
+    req(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.API_KEY}`, function(err,res,body){
         if(err){
             
             document.getElementById("news1").innerHTML = "An error occured";
