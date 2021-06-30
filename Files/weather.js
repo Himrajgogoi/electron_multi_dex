@@ -1,7 +1,7 @@
 const req = require("request");
 
 setTimeout(function(){
-    req("https://api.openweathermap.org/data/2.5/weather?id=1271476&units=metric&lang=en&mode=json&APPID=6a14788e68dd771eecc4125dc6ca6cf0", function(err, res, body){
+    req(`https://api.openweathermap.org/data/2.5/weather?id=1271476&units=metric&lang=en&mode=json&APPID=${process.env.APPID}`, function(err, res, body){
         if(err){
 
             let bodyJson = JSON.parse(body);
@@ -38,7 +38,7 @@ var Dibrugarh = document.getElementById("Dibrugarh");
 var Jorhat = document.getElementById("Jorhat");
 
 Guwahati.addEventListener("click", function(){
-    req("https://api.openweathermap.org/data/2.5/weather?id=1271476&units=metric&lang=en&mode=json&APPID=6a14788e68dd771eecc4125dc6ca6cf0", function(err, res, body){
+    req(`https://api.openweathermap.org/data/2.5/weather?id=1271476&units=metric&lang=en&mode=json&APPID=${process.env.APPID}`, function(err, res, body){
         if(err){
 
             let bodyJson = JSON.parse(body);
@@ -74,7 +74,7 @@ Guwahati.addEventListener("click", function(){
 
 
 Dibrugarh.addEventListener("click", function(){
-    req("https://api.openweathermap.org/data/2.5/weather?id=1272648&units=metric&lang=en&mode=json&APPID=b4d24f0a32abb802d7b50077b5edd53a", function(err, res, body){
+    req(`https://api.openweathermap.org/data/2.5/weather?id=1272648&units=metric&lang=en&mode=json&APPID=${process.env.DIB}`, function(err, res, body){
         if(err){
 
             let bodyJson = JSON.parse(body);
@@ -109,7 +109,7 @@ Dibrugarh.addEventListener("click", function(){
 })
 
 Jorhat.addEventListener("click", function(){
-    req("https://api.openweathermap.org/data/2.5/weather?id=1268820&units=metric&lang=en&mode=json&APPID=5580cca28620a33c336841f3f6f29321", function(err, res, body){
+    req(`https://api.openweathermap.org/data/2.5/weather?id=1268820&units=metric&lang=en&mode=json&APPID=${process.env.JHT}`, function(err, res, body){
         if(err){
 
             let bodyJson = JSON.parse(body);

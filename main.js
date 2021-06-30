@@ -1,10 +1,14 @@
+if(process.env.NODE_ENV !== "production"){
+    require('dotenv').config();
+}
+
 const electron = require("electron");
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require("path");
 const url = require("url");
 const ipc = electron.ipcMain;
-
+var PythonShell = require("python-shell");
 let win;
 
 
@@ -66,6 +70,11 @@ function createWindow(){
     // for youtube //
     ipc.on("open-youtube", function(event){
         electron.shell.openExternal("https://www.youtube.com/");
+    })
+
+    // for v assistant //
+    ipc.on("open-assistant", function(event){
+        PythonShell.PythonShell.run("virtual_assistant.py",null, function(err,result){})
     })
 
     win.on("closed", ()=>{

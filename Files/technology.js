@@ -3,7 +3,7 @@ const req = require("request");
 
 
 function fetch(category){
-    req(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=55e5ec9ecd46429783d0980e4fd75fd0`, function(err, res, body){
+    req(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.API_KEY}`, function(err, res, body){
         if(err){
             document.getElementById("newsCatg1").innerHTML= "An error occured";
             document.getElementById("newsCatg2").innerHTML= "An error occured";

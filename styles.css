@@ -259,6 +259,19 @@
 }
 
 
+#VAssistant{
+    background-color:rgb(6, 139, 216);
+    background-image: url('./images/bot.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#VAssistant:hover{
+    background-color:rgb(6, 50, 75);
+}
+
+
 .newsHead > .row{
    display: block;
    overflow-x: auto;

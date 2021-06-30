@@ -7,6 +7,7 @@ const Clock = document.getElementById("Clock");
 const Weather = document.getElementById("Weather");
 const News = document.getElementById("News");
 const Youtube = document.getElementById("Youtube");
+const VAssistant = document.getElementById("VAssistant");
 
 Clock.addEventListener("click", function(){
     ipc.send("open-clock");
@@ -24,8 +25,13 @@ Youtube.addEventListener("click", function(){
     ipc.send("open-youtube");
 });
 
+VAssistant.addEventListener("click", function(){
+    ipc.send("open-assistant")
+})
+
+
 setTimeout(function(){
-    req("https://newsapi.org/v2/top-headlines?country=in&apiKey=55e5ec9ecd46429783d0980e4fd75fd0", function(err,res,body){
+    req(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.API_KEY}`, function(err,res,body){
         if(err){
             
             document.getElementById("news1").innerHTML = "An error occured";
